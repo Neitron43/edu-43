@@ -22,7 +22,9 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
-
+html {
+    scroll-behavior: smooth;
+    }
 body {
     box-sizing: border-box;
     padding: 0;
@@ -98,11 +100,11 @@ header {
 
 }
 .header-nav-navigation ul{
-    display: flex;
-    height: 50px;
+    display: none;
+    /* height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(196, 196, 196, 0.3);
-    border-radius: 100px;
+    border-radius: 100px; */
 }
 .header-nav-navigation ul li{
     margin-left: 30px;
@@ -292,7 +294,7 @@ header {
     margin-top: -12%;
     margin-left: 63%;
 }
-#big-plus {
+/* #big-plus {
     animation-name: krest;
     animation-duration: 60s;
     animation-iteration-count: infinite;
@@ -303,24 +305,13 @@ header {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
+} */
 .header-nav-logo-img{
     transition: 5s;
 }
 .header-nav-logo-img:hover{
     animation-name:yletel;
     animation-duration: 5s;
-}
-@keyframes yletel {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-100px);
-    }
-    100% { 
-        transform: translateY(0px);
-    }
 }
 
 @keyframes krest {
@@ -607,11 +598,12 @@ header {
 footer{
     margin-top: 230px;
 }
-.footer-nav {
+.footer-nav-logo{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
+
 @media (max-width: 1700px) {
     .intro-picture {
         margin-top: 50px;
@@ -796,7 +788,7 @@ footer{
     .header-nav-logo {
         zoom: 0.8;
     }
-    .header-nav-burger {
+    /* .header-nav-burger {
         zoom: 1.2;
         display: block;
         position: absolute;
@@ -844,7 +836,7 @@ footer{
     .header-nav-burger.active:after{
         transform: rotate(-45deg);
         bottom: 9px;
-    }
+    } */
     .header-nav-navigation {
         position: fixed;
         top: -100%;

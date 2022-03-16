@@ -17,17 +17,15 @@
                     <div class="header-nav-logo-img"><img src="./img/шляпадлялоготипацветанегр.png"></div>
                     <div class="header-nav-logo-text"><h4><a href="#">edu43.ru</a></h4></div>
                 </div>
-                <div class="header-nav-burger">
+                <!-- <div class="header-nav-burger">
                     <span></span>
                 </div>
                 <div class="header-nav-navigation">
                         <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">ВУЗЫ</a></li>
-                            <li><a href="#">О проекте</a></li>
+                            <li><a href="/">Главная</a></li>
                             <li><a href="#">101 Digital</a></li>
                         </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -48,18 +46,13 @@
                             <span id="animated-score-1">+</span>
                             <p>Участников</p>
                         </div>
-                        <div class="intro-left-info-block">
-                            <span id="animated-score-2">+</span>
-                            <p>Лет не пьём пиво</p>
-                        </div>
-                        <div class="intro-left-info-block">
-                            <span id="animated-score-3">+</span>
-                            <p>Красивых анимаций</p>
-                        </div>
                     </div>
-                    <div class="intro-left-button"><button class="button-01 btn-white"><p>Узнать подробнее</p><img src="./img/стрелкавкнопке.png"></button></div>
+                    <div id="intro-left-button" class="intro-left-button">
+                        <form action="/#yak1">
+                            <button class="button-01 btn-white"><p>Узнать подробнее</p><img src="./img/стрелкавкнопке.png"></button>
+                        </form>
+                    </div>
                 </div>
-                <!--ТУТ Я НАЧАЛ СТРАДАТЬ!!!-->
                 <div id="scene" class="intro-picture" >
                     <img data-depth="0.1" class="intro-picture-3" src="./img/красноепятно.png">
                     <div img class="intro-picture-2" data-depth="0.2"><img class="intro-picture-2" src="./img/контуркрасногопятна.png"></div>
@@ -72,7 +65,7 @@
                     <img class="leaf-adaptive" src="./img/leaf-adaptive.png">
                 </div>
                 </div>
-                <div class="intro-secondary-info">
+                <div class="intro-secondary-info" id="yak1">
                 <div class="intro-secondary-info-maintext"><p>Информационный портал о средне-специальных и высших учебных заведениях нашего города, созданный в рамках школьного проекта в десятом классе, сможет помочь учащимся и их родителям с выбором того самого образовательного учреждения, в котором они смогут получить свою первую профессию и выйти в самостоятельную жизнь.</p></div>
                 <div class="intro-secondary-info-behindtext"><p>Куда мне поступать?</p></div>
                 <!---<div class="shots"><img src="./img/прострелилимужика.png"></div>
@@ -187,18 +180,18 @@
     <footer>
         <div class="wrapper">
             <div class="footer-nav">
-                <div class="header-nav-logo">
+                <div class="footer-nav-logo">
                     <div class="header-nav-logo-img"><img src="./img/шляпадлялоготипацветанегр.png"></div>
                     <div class="header-nav-logo-text"><h4>edu43.ru</h4></div>
                 </div>
-                <div class="header-nav-navigation">
+                <!-- <div class="header-nav-navigation">
                     <ul>
                         <li><p id="nav_first-child">Главная</p></li>
                         <li><p>Рейтинг</p></li>
                         <li><p>О проекте</p></li>
                         <li><p>101 Digital</p></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="footer-logo">
                 <img src="./img/101 digital.svg">
@@ -224,8 +217,6 @@
         window.addEventListener('DOMContentLoaded', () => {   
             CounterAnimation(document.getElementById('animated-score'), duration=30, stopOn=30);
             CounterAnimation(document.getElementById('animated-score-1'), duration=9, stopOn=99);
-            CounterAnimation(document.getElementById('animated-score-2'), duration=60, stopOn=16);
-            CounterAnimation(document.getElementById('animated-score-3'), duration=90, stopOn=10);
         })
     </script>
 
